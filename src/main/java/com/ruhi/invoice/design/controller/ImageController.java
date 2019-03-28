@@ -52,9 +52,9 @@ public class ImageController {
 	public ModelAndView showImage(@PathVariable int id) throws IOException {
 		Image img = services.getImageById(id);
 		byte[] encoded=Base64.encodeBase64(img.getImgData());
-		System.out.println("encoded byte = "+encoded);
+		//System.out.println("encoded byte = "+encoded);
 		String encodedString = new String(encoded);
-		System.out.println("encoded string = "+encodedString);
+		//System.out.println("encoded string = "+encodedString);
 		ModelAndView model = new ModelAndView();
 		model.setViewName("viewimage");
 		model.addObject("img", img);
