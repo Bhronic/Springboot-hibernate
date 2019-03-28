@@ -1,4 +1,4 @@
-package com.example;
+package com.ruhi.invoice.design.dataConfig;
 
 import java.util.Properties;
 
